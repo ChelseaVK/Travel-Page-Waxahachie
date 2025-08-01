@@ -95,6 +95,10 @@ section.secondary {
   padding: 30px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-footer {
   padding: 0 30px 30px;
 }
@@ -111,6 +115,11 @@ section.secondary {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 main {
@@ -200,9 +209,15 @@ footer a {
   opacity: 0.7;
 }
 
-.img-responsive {
-  max-width: 100%;
+.img-responsive-1 {
+  width: 100%;
   display: block;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
 }
 
 @media (max-width: 960px) {
@@ -229,5 +244,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
